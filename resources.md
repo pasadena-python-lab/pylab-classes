@@ -1,16 +1,16 @@
-#Resources - Installing Python
+# Resources - Installing Python
 
 During class we'll frequently use the command line and a text editor, and it helps if you have these installed beforehand. 
 
 
-##First, the Command Line##
+## First, the Command Line
 
 When learning Python you'll probably come across many references to the Command Line. What is it? How do you use it?
 
 The answers to many of these questions can be found [here](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything). On Mac or Linux you're already set with Terminal or bash. Many versions of Windows come with Powershell, but you can also download it [here.](https://www.microsoft.com/en-us/download/details.aspx?id=42554)
 
 
-##Installing Python##
+## Installing Python
 
 **Windows**
 Windows requires you to install Python, which can be confusing if you're new to programming. Below are a few guides to help you through the process:
@@ -33,11 +33,11 @@ this will start a Python instance, and everything else you type in the terminal 
 
 This depends on the Linux distribution you're using, but it will most likely be installed. 
 
-##Text Editors##
+## Text Editors
 
 There are quite a few to choose from, but some of the most popular include-
 
-* [SublimeText2](http://www.sublimetext.com/2)(Mac, Windows, Linux)
+* [SublimeText](http://www.sublimetext.com/)(Mac, Windows, Linux)
 
 * [Atom](https://atom.io/)(Mac, Windows, Linux)
 
