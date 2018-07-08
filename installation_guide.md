@@ -1,7 +1,6 @@
 # Resources - Installing Python
 
-During class we'll frequently use the command line and a text editor, and it helps if you have these installed beforehand. 
-
+During class we'll frequently use the command line and a text editor, and it helps if you have these installed beforehand. But if you're having trouble or don't have time, please come anyway!
 
 ## First, the Command Line
 
@@ -38,7 +37,7 @@ this will start a Python instance, and everything else you type in the terminal 
 
 **Linux**
 
-This depends on the Linux distribution you're using, but it will most likely be installed. 
+This depends on the Linux distribution you're using, but it will most likely be installed.
 
 ## Text Editors
 
@@ -51,7 +50,3 @@ There are quite a few to choose from, but some of the most popular include-
 * If you're using Windows, [Notepad++](http://notepad-plus-plus.org/) is a great option.
 
 * Experienced programmers might enjoy [Emacs](http://www.gnu.org/software/emacs/) or [Vim](http://www.vim.org/index.php)
-
-
-
-

@@ -24,13 +24,6 @@
 * [Quora's Data Science topic FAQ](https://www.quora.com/What-is-the-Data-Science-topic-FAQ)
 * [KDnuggets](http://www.kdnuggets.com/): Data mining news, jobs, classes and more
 
-
-## DC Data Groups
-
-* [Data Community DC](http://www.datacommunitydc.org/): Coordinates six local data-related meetup groups
-* [District Data Labs](http://www.districtdatalabs.com/): Offers courses and other projects to local data scientists
-
-
 ## Online Classes
 
 * [Coursera's Data Science Specialization](https://www.coursera.org/specialization/jhudatascience/1): Nine courses (running every month) and a Capstone project, taught in R
@@ -45,7 +38,6 @@
 * [Coursera's Neural Networks for Machine Learning](https://www.coursera.org/course/neuralnets): Taught by Geoffrey Hinton, no upcoming sessions
 * [statistics.com](http://www.statistics.com/data-science/): Many online courses in data science
 * [CourseTalk](http://www.coursetalk.com/): Read reviews of online courses
-
 
 ## Online Content from Offline Classes
 
@@ -85,7 +77,7 @@
 * [Statistics: Methods and Applications](http://www.statsoft.com/Textbook) (free HTML)
 * [Python for Data Analysis](http://shop.oreilly.com/product/0636920023784.do)
 * [Data Smart: Using Data Science to Transform Information into Insight](http://www.amazon.com/gp/product/111866146X/)
-* [Sams Teach Yourself SQL in 10 Minutes](http://www.amazon.com/Sams-Teach-Yourself-Minutes-Edition/dp/0672336073)
+* [Sam's Teach Yourself SQL in 10 Minutes](http://www.amazon.com/Sams-Teach-Yourself-Minutes-Edition/dp/0672336073)
 
 
 ## Other Resources

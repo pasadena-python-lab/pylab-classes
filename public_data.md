@@ -1,9 +1,10 @@
 ## Public Data Sources
 
 * Open data catalogs from various governments and NGOs:
+     * [Pasadena Open Data](https://ww5.cityofpasadena.net/main/city-services/open-data/)
+     * [DataLA](https://data.lacity.org/)
      * [NYC Open Data](https://nycopendata.socrata.com/)
      * [DC Open Data Catalog](http://data.dc.gov/) / [OpenDataDC](http://www.opendatadc.org/)
-     * [DataLA](https://data.lacity.org/)
      * [data.gov](https://www.data.gov/) (see also: [Project Open Data Dashboard](http://data.civicagency.org/))
      * [data.gov.uk](http://data.gov.uk/)
      * [US Census Bureau](http://www.census.gov/)
