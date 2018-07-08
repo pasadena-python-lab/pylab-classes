@@ -21,6 +21,7 @@ The answers to many of these questions can be found [here](http://lifehacker.com
 
 
 **Windows**
+
 Windows requires you to install Python, which can be confusing if you're new to programming. Below are a few guides to help you through the process:
 
 * [How-to-Geek's Guide to Installing Python](http://www.howtogeek.com/197947/how-to-install-python-on-windows/), which includes screen shots documenting the steps, if you prefer visual guides.
