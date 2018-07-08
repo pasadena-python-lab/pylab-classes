@@ -2,13 +2,6 @@
 
 During class we'll frequently use the command line and a text editor, and it helps if you have these installed beforehand. But if you're having trouble or don't have time, please come anyway!
 
-## First, the Command Line
-
-When learning Python you'll probably come across many references to the Command Line. What is it? How do you use it?
-
-The answers to many of these questions can be found [here](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything). On Mac or Linux you're already set with Terminal or bash. Many versions of Windows come with Powershell, but you can also download it [here.](https://www.microsoft.com/en-us/download/details.aspx?id=42554)
-
-
 ## Installing Python
 
 ### Basic, Easy Installation with Anaconda
@@ -19,6 +12,13 @@ Download it here:
 https://www.anaconda.com/download/
 
 ### Advanced Installation
+
+**Command Line**
+
+When learning Python you'll probably come across many references to the Command Line. What is it? How do you use it?
+
+The answers to many of these questions can be found [here](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything). On Mac or Linux you're already set with Terminal or bash. Many versions of Windows come with Powershell, but you can also download it [here.](https://www.microsoft.com/en-us/download/details.aspx?id=42554)
+
 
 **Windows**
 Windows requires you to install Python, which can be confusing if you're new to programming. Below are a few guides to help you through the process:
