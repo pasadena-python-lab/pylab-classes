@@ -12,14 +12,21 @@ The answers to many of these questions can be found [here](http://lifehacker.com
 
 ## Installing Python
 
+### Basic, Easy Installation with Anaconda
+
+Anaconda is an easy to install software pacakge for Windows, Mac and Linux. It comes with many of the frequent tools and modules that many novice python developers use.
+
+Download it here:
+https://www.anaconda.com/download/
+
+### Advanced Installation
+
 **Windows**
 Windows requires you to install Python, which can be confusing if you're new to programming. Below are a few guides to help you through the process:
 
 * [How-to-Geek's Guide to Installing Python](http://www.howtogeek.com/197947/how-to-install-python-on-windows/), which includes screen shots documenting the steps, if you prefer visual guides.
 
 * [The official Python Documentation](https://docs.python.org/2/using/windows.html#installing-python), which has a couple helpful links.
-
-* If you plan ot use Python for data analytics you can download [Anaconda](http://continuum.io/downloads#all), a Python distribution that comes with many of the most popular packages for analytics as well as Spyder, an interactive environment similar to what you're used to if you've used SaS, Stata, SPSS, or R Studio.
 
 **Mac**
 
