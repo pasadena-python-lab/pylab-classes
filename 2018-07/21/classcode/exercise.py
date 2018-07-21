@@ -25,6 +25,7 @@ import os
 import csv
 
 try:
+    # python3 functionality
     from urllib.request import urlretrieve
 except ImportError as ex:
     from urllib import urlretrieve # python2 compability
@@ -46,14 +47,12 @@ def file_downloader(url, filename):
 # Open the CSV FILE
 def read_csv_file(csv_filename):
     """ Opens csv file"""
-
-    ## Instructions
-    # open file
-
-    # read csv file
-    # hint: https://docs.python.org/3/library/csv.html#examples
-
-    # return as list of lists
+    list_of_lists = []
+    with open(csv_filename, 'r') as csvfile:
+        csvreader = csv.reader(csvfile, delimiter=',')
+        for row in csvreader:
+            list_of_lists.append(row)
+    return list_of_lists
 
 # Questions
 
@@ -80,7 +79,31 @@ if __name__ == '__main__':
 
 
     ## uncomment after hello world runs
-    # csv_path = file_downloader(url_csv, csv_filename)
+    csv_path = file_downloader(url_csv, csv_filename)
 
     ## uncomment when ready
-    # csv_data = read_csv_file(csv_path)
+    csv_data = read_csv_file(csv_path)
+
+    # print(len(csv_data))
+
+    # 1. Using python, how many incidents are this CSV?
+    # header = csv_data[0]
+    # print(header)
+
+    all_incidents = csv_data[1:]
+
+    # print(len(all_incidents))
+
+    # 2. What is the header row?
+    #
+    # More Difficult
+    # 3. How many 'TRAFFIC STOP' incident_type are in the csv?
+
+    counter = 0
+    for row in all_incidents:
+        # print(repr(row[1]))
+        if 'TRAFFIC STOP' in row[1]:
+            # print('found')
+            counter = counter + 1
+
+    print(counter)
