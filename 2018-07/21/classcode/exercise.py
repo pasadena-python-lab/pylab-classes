@@ -47,30 +47,14 @@ def file_downloader(url, filename):
 # Open the CSV FILE
 def read_csv_file(csv_filename):
     """ Opens csv file"""
-    list_of_lists = []
+    data = []
     with open(csv_filename, 'r') as csvfile:
         csvreader = csv.reader(csvfile, delimiter=',')
         for row in csvreader:
-            list_of_lists.append(row)
-    return list_of_lists
+            data.append(row)
+    return data
 
-# Questions
 
-# 1. Using python, how many incidents are this CSV?
-# 2. What is the header row?
-
-# More Difficult
-# 3. How many 'TRAFFIC STOP' incident_type are in the csv?
-# Hint - What is a for-loop in python?
-# How would you count these?
-
-# Bonus
-# How many incidents of each type are in this dataset?
-# Hint - Make a counter or find one available in python
-
-# Extra Bonus
-# Can you parse the incident_datetime timestamp?
-# Hint: look into datetime.strptime
 
 if __name__ == '__main__':
     print('hello world')
@@ -83,6 +67,9 @@ if __name__ == '__main__':
 
     ## uncomment when ready
     csv_data = read_csv_file(csv_path)
+
+
+    # Questions
 
     # print(len(csv_data))
 
@@ -106,4 +93,46 @@ if __name__ == '__main__':
             # print('found')
             counter = counter + 1
 
-    print(counter)
+    # Bonus
+    # How many incidents of each type are in this dataset?
+    # Hint - Make a counter or find one available in python
+
+    # use a dictionary to store and for easy lookups
+    all_incident_counter = {}
+
+    for row in all_incidents:
+        incident_type = row[1]
+
+        # remove whitespace from the the incident_type
+        incident_type_clean = incident_type.strip()
+        # see the repr (what the computer sees)
+        # print(repr(incident_type_clean))
+
+        # see if the incident_type is in the counter
+        if all_incident_counter.get(incident_type_clean):
+            all_incident_counter[incident_type_clean] += 1
+        else:
+            # if not, then add it with starting value of 1
+            all_incident_counter[incident_type_clean] = 1
+
+    # see the count
+    print(all_incident_counter)
+
+    # Extra Bonus
+    # Can you parse the incident_datetime timestamp?
+    # Hint: look into datetime.strptime
+
+    # sample timestamp
+    str_time = "2017-11-17T22:02:37.000Z"
+
+    # use the datetime library
+    # learn the time formats here:
+    # https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior
+
+    import datetime
+    date_format = "%Y-%m-%dT%H:%M:%S.%fZ"
+    date_date = datetime.datetime.strptime(str_time, date_format)
+    print(date_date)
+
+    # Advanced Advice: use dateutil parser
+    # https://dateutil.readthedocs.io/en/stable/parser.html
