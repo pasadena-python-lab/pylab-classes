@@ -63,7 +63,7 @@ if __name__ == '__main__':
     # Find all of the page links
     pattern = re.compile(r'<item rdf:about=.*">')
     result = pattern.findall(file_data)
-
+    print(result)
     # EXERCISE - Get all of the titles and images out for each listing
     # Return a list of dictionaries with the link, image links and title for each listing
 

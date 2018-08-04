@@ -22,14 +22,18 @@ x = 5  # creates an object
 
 y = 2345
 
-type(x)  # check the type: int (not declared explicitly)
+# print(type(x))  # check the type: int (not declared explicitly)
+
+
 type(5)  # assigning it to a variable is not required
 type(5.0)  # float
 type(True)  # bool
 
+# print(type(5.0))
 ### Exercise: Checking Data Type
 text = 'What type of data type am I?'
 
+# print(type(text))
 
 # math operations
 
@@ -53,6 +57,7 @@ d = a + b -c
 
 #2 What value is d?
 
+# print(d)
 
 
 #3 Assign a variable 'e' that is 'd' divided by 6.0
@@ -61,6 +66,8 @@ e = d / 6.0
 
 #4 what is the value of e?
 
+# print(e)
+
 
 # STRINGS
 # https://docs.python.org/3/tutorial/introduction.html#strings
@@ -68,27 +75,46 @@ e = d / 6.0
 s = str(42)
 
 s  # convert another data type into a string (casting)
+
 s = 'I like you'
 
 # examine a string
 s[0]  # returns 'I'
+# print(s[0])
 len(s)  # returns 10
-
+# print(len(s))
 # string slicing like lists
-s[0:7]  # returns 'I like'
+s[0:7]  # returns 'I like '
+# print(s[0:7])
+
 s[6:]  # returns 'you'
+# print(s[0:])
+
 s[-1]  # returns 'u'
+# print(s[-1])
 
 # EXERCISE: Book Titles (Part 1)
 # 1) Extract the book title from the string
 # 2) Save each book title to a variable (ie book1_title)
 # 3) How many characters/elements are in each title?
 
+# {bookTitle} by {author}, {years}
+
 book1 = "Beyond the Door by Dick, Philip K., 1928-1982"
+
+# print(book1[:15])
+book1_title = book1[:-29]
+
+# print(len(book1_title))
 
 book2 = "The Variable Man by Dick, Philip K., 1928-1982"
 
+# print(book2[:17])
+# print(book2[:-29])
+
 book3 = "The Skull by Dick, Philip K., 1928-1982"
+
+# print(book3[:10])
 
 ## Learn more with Automate the Boring Stuff:
 ## https://automatetheboringstuff.com/chapter1/
@@ -120,15 +146,17 @@ len(nums)                   # check the length: 3
 nums[0]                     # print first element
 nums[0] = 6                 # replace a list element
 
-nums
+
 
 nums.append(7)              # list 'method' that modifies the list
+
+# print(nums)
 # help(nums.append)           # help on this method
 # help(nums)
-dir(nums) # help on a list object
+# print(dir(nums)) # help on a list object)
 nums.remove('five')         # another list method
 
-nums
+# print(nums)
 
 sorted(nums)                # 'function' that does not modify the list
 nums                        # it was not affected
@@ -162,22 +190,25 @@ list(range(30))    # same thing: starting at zero is the default
 num = 0
 
 # simple for loop
-for num in range(5):
-    pass
-    # print(num)
+# for num in range(5):
+#     print(num)
 
 # print each list element in uppercase
 fruits = ['apple', 'banana', 'cherry']
 
 upper_fruits = []
 for i in range(len(fruits)):
-    upper_case = fruits[i].upper()
-    upper_fruits.append(upper_case)
+    # print(fruits[i])
+    pass
+    # upper_case = fruits[i].upper()
+    # upper_fruits.append(upper_case)
 
 better_upper_fruits = []
 # better for loop
 for fruit in fruits:
     upper_case = fruit.upper()
+
+    # print(upper_case)
     better_upper_fruits.append(upper_case)
 
 
@@ -197,6 +228,28 @@ craigslist_urls = """
 <item rdf:about="https://losangeles.craigslist.org/sgv/apa/d/room-in-2-bedroom-1bt/6654578054.html">\n
 <item rdf:about="https://losangeles.craigslist.org/sgv/apa/d/2-bed-2-bath-with-2-parking/6657589985.html">
 """
+
+# print(type(craigslist_urls))
+
+urls_split = craigslist_urls.split('\n')
+
+# print(urls_split)
+
+# url = urls_split[1]
+#
+clean_urls = []
+
+for url in urls_split:
+    if url == '':
+        # forgetta `bout it
+        pass
+    else:
+        clean_url = url[17:-2]
+        clean_urls.append(clean_url)
+
+print(clean_urls)
+
+
 
 
 # Datasource: https://losangeles.craigslist.org/search/apa?availabilityMode=0&format=rss&query=pasadena
