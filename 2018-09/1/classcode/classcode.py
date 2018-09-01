@@ -1,6 +1,8 @@
 """
     Pylab 1 Sept 2018
 
+    "List, For-Loops and Dictionaries"
+
     Nathan @nate_somewhere
 
     Class notes:
@@ -9,6 +11,10 @@
     Internet connection required
     Text editor required
 """
+
+# print('hello world')
+#
+# # Comments in python use a '#'
 
 ## WARM UP QUIZ
 
@@ -61,6 +67,10 @@ weekdays[::-1]      # backwards (4, 3, 2, 1, 0)
 
 days = weekdays + ['sat','sun']     # concatenate lists
 
+days_appended = ['mon','tues','wed','thurs','fri']
+days_appended.append('sat') # append individual elements to list
+days_appended.append('sun')
+
 #########
 # Exercise - Lists
 #########
@@ -69,7 +79,7 @@ days = weekdays + ['sat','sun']     # concatenate lists
 # How do I check the type of 'mon'?
 # How do I slice out 'wed' through 'friday'?
 # What are two ways to slice out 'fri'?
-# What is the length of days?
+# What is the length of days and days_appended?
 # How do I reverse the order of days? (hint: google it)
 
 
@@ -164,7 +174,3 @@ family['kids'][0]   # returns 'bart'
 # Then, change the value for 'b' to be 25
 # Then, change the 30 to be 35
 # Finally, append 45 to the end of the list that contains 35 and 40
-
-
-
-### Real Work Exercise
