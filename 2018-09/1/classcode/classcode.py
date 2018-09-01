@@ -26,24 +26,33 @@ d = b / 2
 
 # What is type(a)?
 
+# print(type(a))
+
 # What is type(b)?
+
+# print(type(b))
 
 # What is c?
 
+# print(c)
+
 # What is d?
 
+# print(d)
 
 # PART II
 
 e = [a, b]
-f = range(10)
+f = range(0, 10, 3)
 
+# print(list(f))
 # What is type(e)?
 # What is len(e)?
 # What is type(f)?
 # What are the contents of f?
 # What is 'range' called?
 # How do I get help on 'range'?
+# print(help(range))
 
 
 # LISTS
@@ -80,22 +89,36 @@ days_appended.append('sun')
 # How do I slice out 'wed' through 'friday'?
 # What are two ways to slice out 'fri'?
 # What is the length of days and days_appended?
+len(days)
+len(days_appended)
+
 # How do I reverse the order of days? (hint: google it)
-
-
-
+# print(weekdays[::-1])      # backwards (4, 3, 2, 1, 0)
+#
+# print(weekdays)
+# print('------')
+# reversed_days = weekdays.reverse()
+# print(reversed_days)
+# print(list(reversed(weekdays)))
+#
+# print('-----')
+# print(weekdays)
 ## FOR LOOPS AND BASIC LIST COMPREHENSIONS
 
 # print 1 through 5
 nums = range(1, 6)
+
+print(list(range(1, 6)))
 for num in nums:
-    pass # pass does nothing in loop
-    # print(num)
+    # pass # pass does nothing in loop
+    print(num)
 
 # for loop to create a list of cubes
 cubes = []
 for num in nums:
     cubes.append(num**3)
+print('------')
+print(cubes)
 
 # equivalent list comprehension
 cubes = [num**3 for num in nums]    # [1, 8, 27, 64, 125]
@@ -103,16 +126,28 @@ cubes = [num**3 for num in nums]    # [1, 8, 27, 64, 125]
 
 # EXERCISE:
 # Given that: letters = ['a','b','c']
+letters = ['a', 'b', 'c']
+
 # Write a for-loop that returns: ['A','B','C']
+
+upper_letters = []
+for letter in letters:
+    upper_letter = letter.upper()
+    upper_letters.append(upper_letter)
 # Write a list comprehension that returns: ['A','B','C']
+
+upper_letters = [let.upper() for let in letters]
+
 # Hint: 'hello'.upper() returns 'HELLO'
 
 
 # BONUS EXERCISE:
 # Given that: word = 'abc'
+word = 'abc'
 # Write a list comprehension that returns: ['A','B','C']
 
-
+upper_abc = [let.upper() for let in word]
+print(upper_abc)
 
 ## LIST COMPREHENSIONS WITH CONDITIONS
 
@@ -170,7 +205,14 @@ family['kids'][0]   # returns 'bart'
 
 # EXERCISE:
 # Given that: d = {'a':10, 'b':20, 'c':[30, 40]}
+d = {'a':10, 'b':20, 'c':[30, 40]}
 # First, print the value for 'a'
+d['a']
 # Then, change the value for 'b' to be 25
+d["b"] = 25
 # Then, change the 30 to be 35
+
+d['c'][0] = 35
 # Finally, append 45 to the end of the list that contains 35 and 40
+d['c'].append(45)
+print(d)
